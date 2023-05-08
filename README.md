@@ -64,24 +64,15 @@ configure in the usart 2 as asynchronous mode and set the baud rate as 115200 as
 
 12. connect the  ARM board to power supply and usb 
 
-
 13. check for execution of the output using run option 
-
 
 
 ## STM 32 CUBE PROGRAM :
 ```
-
 #include "main.h"
 #include "stdio.h"
-
 UART_HandleTypeDef huart2;
-
-
 uint32_t adc_val;
-
-
-
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_ADC_Init(void);
@@ -102,9 +93,6 @@ PUTCHAR_PROTOTYPE
 
 int main(void)
 {
-  
-
-  
   MX_GPIO_Init();
   MX_ADC_Init();
   MX_USART2_UART_Init();
@@ -125,9 +113,7 @@ int main(void)
 	  		{
 	  			 HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);;
 	  		}
-
   }
-
 }
 
 void SystemClock_Config(void)
@@ -159,8 +145,6 @@ void SystemClock_Config(void)
     Error_Handler();
   }
 }
-
-
 static void MX_ADC_Init(void)
 {
 
@@ -187,7 +171,6 @@ static void MX_ADC_Init(void)
   {
     Error_Handler();
   }
-  
   sConfig.Channel = ADC_CHANNEL_2;
   sConfig.Rank = ADC_REGULAR_RANK_1;
   sConfig.SamplingTime = ADC_SAMPLINGTIME_COMMON_1;
@@ -195,15 +178,10 @@ static void MX_ADC_Init(void)
   {
     Error_Handler();
   }
- 
-
 }
-
 
 static void MX_USART2_UART_Init(void)
 {
-
-
   huart2.Instance = USART2;
   huart2.Init.BaudRate = 115200;
   huart2.Init.WordLength = UART_WORDLENGTH_8B;
@@ -234,7 +212,6 @@ static void MX_USART2_UART_Init(void)
  
 }
 
-
 static void MX_GPIO_Init(void)
 {
   GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -251,19 +228,6 @@ static void MX_GPIO_Init(void)
 
 }
 
-```
-```
-# INCLUSION FILE(SIOL MOISTURE SENSOR.H):
-
-
-#ifndef INC_SOIL_MOISTURE_SENSOR_H_
-#define INC_SOIL_MOISTURE_SENSOR_H_
-void soil_moisture(void);
-void ADC_Init(void);
-void GPIO_Init(void);
-void HAL_ADC_MspInit(ADC_HandleTypeDef* hadc);
-void HAL_ADC_MspDeInit(ADC_HandleTypeDef* hadc);
-#endif 
 ```
 
 ## Output screen shots of Serial port utility   :
