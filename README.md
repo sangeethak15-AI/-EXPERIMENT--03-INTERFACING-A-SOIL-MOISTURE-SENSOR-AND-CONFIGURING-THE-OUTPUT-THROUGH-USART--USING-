@@ -1,4 +1,4 @@
-# EXPERIMENT--04-INTERFACING-A-SOIL-MOISTURE-SENSOR-AND-CONFIGURING-THE-OUTPUT-THROUGH-USART- USING IOT DEVELOPMENT BOARD 
+# EXPERIMENT--03-INTERFACING-A-SOIL-MOISTURE-SENSOR-AND-CONFIGURING-THE-OUTPUT-THROUGH-USART- USING IOT DEVELOPMENT BOARD 
 ## Aim: To Interface a soil moisture sensor , configure  the ADC and transfer the data through serial port usign USART  
 ## Components required: STM32 CUBE IDE, ARM IOT development board,  STM programmer tool, Serial port utility tool 
 ## Theory 
@@ -231,9 +231,11 @@ static void MX_GPIO_Init(void)
 ```
 
 ## Output screen shots of Serial port utility   :
- ![image](https://user-images.githubusercontent.com/93992063/236771167-1733f151-9b53-48b3-9148-9c04550b7648.png)
+![image](https://user-images.githubusercontent.com/93992063/236844455-d57b31a6-63ae-43d7-980d-725259352322.png)
 
- ![image](https://user-images.githubusercontent.com/93992063/236771426-935ee6a0-dcc3-4182-9017-d539c8e7c10d.png)
+
+![image](https://user-images.githubusercontent.com/93992063/236844569-778a5338-fa6e-4514-9161-2e72b885778f.png)
+
 ![image](https://user-images.githubusercontent.com/93992063/236771699-147ee740-7a3d-4fd1-ad6e-23e12cdbe2f6.png)
 ![image](https://user-images.githubusercontent.com/93992063/236771790-82dcddf4-22c6-44bc-84c2-26781dbcacdd.png)
 ![image](https://user-images.githubusercontent.com/93992063/236771909-e83027e9-7552-4f69-9917-c26a08542cdf.png)
